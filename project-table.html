@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+   <h1>Pendaftaran Murid Kursus Baru</h1>
+   <form>
+   <table border="0"cellpadding="5">
+    <tbody>
+        <tr>
+            <td>Nama Lengkap</td>
+            <td>
+                <input type="text" name="fullname" placeholder="Nama Lengkap" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>
+                <input type="date" name="dateofbirth" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Pilihan Kursus</td>
+            <td>
+                <select>
+                    <option value="intensif_utbk">Intensif UTBK</option>
+                    <option value="intensif_sma">Reguler SMA</option>
+                    <option value="reguler_smp">Reguler SMP</option>
+                    <option value="reguler_sd">Reguler SD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hari tersedia</td>
+            <td>
+                <input type="checkbox" name="hari_tersedia" value="senin"> Senin
+                <input type="checkbox" name="hari_tersedia" value="selasa"> Selasa
+                <input type="checkbox" name="hari_tersedia" value="rabu"> Rabu
+                <input type="checkbox" name="hari_tersedia" value="kamis"> Kamis
+                <input type="checkbox" name="hari_tersedia" value="jumat"> Jumat
+                <input type="checkbox" name="hari_tersedia" value="sabtu"> Sabtu
+                <input type="checkbox" name="hari_tersedia" value="ahad"> Ahad
+            </td>
+        </tr>
+        <tr>
+            <td>Metode Belajar</td>
+            <td>
+                <input type="radio" name="metode_belajar" value="offline"> Offline
+                <input type="radio" name="metode_belajar" value="online"> Online
+                <input type="radio" name="metode_belajar" value="hybrid"> Hybrid
+                (Online & Offline)
+
+            </td>
+        <tr>
+            <td colspan="2">
+            <input type="reset" value="Reset" name="reset">
+            <input type="submit" name="submit" value="submit">
+            </td>
+        </tr>
+        </tbody>
+   </table> 
+   </form>
+</body>
+</html>
